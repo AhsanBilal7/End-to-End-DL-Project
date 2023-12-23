@@ -3,3 +3,6 @@ Flask
 Flask-Cors
 -e .
 # -e is to run the setup.py
+
+# pip install wheel
+# pip install setup.py sdist bdist_wheel
