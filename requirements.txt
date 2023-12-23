@@ -1,0 +1,5 @@
+scipy
+Flask
+Flask-Cors
+-e .
+# -e is to run the setup.py
