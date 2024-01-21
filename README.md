@@ -7,6 +7,7 @@
 - update the entity
 <!-- update Model parameters -->
 - Update entity
+Whenever you create a method, entity is that what is the written type of that 
 - update the configuration manager in src  config
 - update the components
 - update the pipeline

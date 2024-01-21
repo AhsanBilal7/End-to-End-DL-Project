@@ -1,0 +1,1 @@
+from cnnClassifier.config.configurations import ConfigurationManager

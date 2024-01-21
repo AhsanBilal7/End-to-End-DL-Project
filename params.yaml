@@ -1,0 +1,2 @@
+key : value
+# we created the dummy key value so the params yaml is not empty other it will throw error

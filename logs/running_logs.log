@@ -1,1 +1,66 @@
 [2023-12-23 17:15:38,518: INFO: test: Welcome to our custom Log]
+[2023-12-23 19:51:07,494: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 19:51:07,495: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 19:51:07,497: INFO: common: created directory at: artifacts]
+[2023-12-23 19:54:49,649: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 19:54:49,653: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 19:54:49,656: INFO: common: created directory at: artifacts]
+[2023-12-23 19:56:48,197: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 19:56:48,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 19:56:48,202: INFO: common: created directory at: artifacts]
+[2023-12-23 20:00:00,823: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 20:00:00,828: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 20:00:00,830: INFO: common: created directory at: artifacts]
+[2023-12-23 20:01:02,868: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 20:01:02,870: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 20:01:02,871: INFO: common: created directory at: artifacts]
+[2023-12-23 20:01:02,875: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-23 20:04:16,781: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 20:04:16,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 20:04:16,783: INFO: common: created directory at: artifacts]
+[2023-12-23 20:04:16,784: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-23 20:04:41,370: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 20:04:41,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 20:04:41,375: INFO: common: created directory at: artifacts]
+[2023-12-23 20:04:41,376: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-23 20:06:55,970: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-23 20:06:55,973: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-23 20:06:55,975: INFO: common: created directory at: artifacts]
+[2023-12-23 20:06:55,976: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-31 03:52:14,100: INFO: main: Data Ingestion stage started]
+[2023-12-31 03:52:14,119: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-31 03:52:14,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-31 03:52:14,150: INFO: common: created directory at: artifacts]
+[2023-12-31 03:52:14,170: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-31 03:52:14,172: INFO: data_ingestion: Trying to download file...]
+[2023-12-31 03:52:14,174: INFO: data_ingestion: Download started...]
+[2023-12-31 03:52:20,042: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8226:1590A6:E58DB:12F384:65909F1F
+Accept-Ranges: bytes
+Date: Sat, 30 Dec 2023 22:52:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-qpg1245-QPG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1703976735.196042,VS0,VE1544
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4ecdace7cc40a39e175de547ac6e919222fa225c
+Expires: Sat, 30 Dec 2023 22:57:16 GMT
+Source-Age: 1
+
+]
+[2023-12-31 03:52:20,042: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2023-12-31 03:52:20,321: INFO: data_ingestion: removing file:artifacts/data_ingestion\PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2023-12-31 03:52:20,519: INFO: main: Data Ingestion stage completed]
