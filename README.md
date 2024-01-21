@@ -1,3 +1,6 @@
+# Notes
+- `Utils` Add functions that you use frequently  
+
 # End-to-End Deep Learning Project
 
 # Workflow
