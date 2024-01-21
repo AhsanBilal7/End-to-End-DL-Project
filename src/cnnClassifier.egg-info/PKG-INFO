@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A template for End-to-End Deep learning projects
+Home-page: https://github.com/AhsanBilal7/End-to-End-DL-Project
+Author: AhsanBilal7
+Author-email: abilal.bee20seecs@seecs.edu.pk
+Project-URL: Bug Tracker, https://github.com/AhsanBilal7/End-to-End-DL-Project/issues
+
+# End-to-End Deep Learning Project
+
+# Workflow
+- update config.yaml
+- update secret.yaml [optional]
+- update param.yaml 
+- update the entity
+<!-- update Model parameters -->
+- Update entity
+Whenever you create a method, entity is that what is the written type of that 
+- update the configuration manager in src  config
+- update the components
+- update the pipeline
+- updat the main.py
