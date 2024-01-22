@@ -3,10 +3,11 @@ from cnnClassifier.constants import  *
 from dataclasses import dataclass
 from pathlib import Path
 import os
-
 from dataclasses import dataclass
-from cnnClassifier.entity import PrepareBaseModelConfig
-from cnnClassifier.entity.config_entity import DataIngestionConfig
+from cnnClassifier.entity import PrepareBaseModelConfig, DataIngestionConfig, PrepareCallbackConfig
+
+
+
 class ConfigurationManager:
     def __init__(self,
         config_file_path = CONFIG_FILE_PATH,
@@ -15,6 +16,8 @@ class ConfigurationManager:
         self.params = read_yaml(params_file_path)
         create_directories([self.config_file.artifacts_root])
 
+
+    # Data Ingestion
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config_file.data_ingestion
         create_directories([config.root_dir])
@@ -27,6 +30,7 @@ class ConfigurationManager:
         )
         return data_ingestion_config
     
+    # Prepare Base Model
     def get_prepare_model_config(self) -> PrepareBaseModelConfig:
         config = self.config_file.prepare_base_model
         create_directories([config.root_dir])
@@ -52,4 +56,21 @@ class ConfigurationManager:
             params_classes=self.params.CLASSES
         )
         return prepare_base_model_config
+    
+
+    # Prepare Callbackk
+    def get_prepare_callback_config(self) -> PrepareCallbackConfig:
+        config = self.config_file.prepare_callbacks
+        
+        model_ckp = os.path.dirname(config.checkpoint_model_filepath)
+
+
+        create_directories([Path(model_ckp) , Path(config.tensorboard_root_log_dir)])
+        
+        prepare_callback_config = PrepareCallbackConfig(
+            root_dir=Path(config.root_dir),
+            tensorboard_root_log_dir=Path(config.tensorboard_root_log_dir),
+            checkpoint_model_filepath=Path(config.checkpoint_model_filepath)
+        )
+        return prepare_callback_config
     

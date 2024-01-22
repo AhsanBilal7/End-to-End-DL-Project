@@ -23,3 +23,19 @@ try:
 
 except Exception as e:
     logger.info(e)
+
+
+
+
+
+
+
+
+
+# -------------Callback Pipeline is during the training----------------
+# try:
+#     config_manager = ConfigurationManager()
+#     callback_config = config_manager.get_prepare_callback_config()
+#     prepare_callbacks = PrepareCallback(config = callback_config)
+#     callback = prepare_callbacks.get_tb_ckpt_callback()
+# except Exception as e:
