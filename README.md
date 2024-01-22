@@ -1,6 +1,8 @@
 # Notes
 - `Utils` Add functions that you use frequently  
 - `@ensure_annotations` Decorator to ensure that the return value is of the same type
+- `@property` This is for the hidden function and we can access the hidden function withour the paranthesis 
+- `os.path.dirname` It will ignore the last filename and return the remaining path
 
 # End-to-End Deep Learning Project
 
