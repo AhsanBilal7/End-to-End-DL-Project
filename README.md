@@ -1,5 +1,6 @@
 # Notes
 - `Utils` Add functions that you use frequently  
+- `@ensure_annotations` Decorator to ensure that the return value is of the same type
 
 # End-to-End Deep Learning Project
 

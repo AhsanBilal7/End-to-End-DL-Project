@@ -3,7 +3,7 @@ from cnnClassifier import logger
 STORAGE_NAME = 'Data Ingestion stage'
 
 try:
-    logger.info(f'{STORAGE_NAME} started')
+    logger.info(f' >>>>>>>>>> {STORAGE_NAME} started <<<<<<<<<<<')
     data_ingestion_pipeline = DataIngestionTrainingPipeline()
     data_ingestion_pipeline.main()
     logger.info(f'{STORAGE_NAME} completed')

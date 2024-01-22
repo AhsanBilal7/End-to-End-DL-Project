@@ -2,6 +2,9 @@ from cnnClassifier.config import ConfigurationManager
 from cnnClassifier.components import DataIngestion
 from cnnClassifier import logger
 
+
+# Stage-1 Pipeline
+
 class DataIngestionTrainingPipeline:
     def __init__(self):
         pass
