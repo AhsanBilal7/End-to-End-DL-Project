@@ -4,8 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 import os
 from dataclasses import dataclass
-from cnnClassifier.entity import PrepareBaseModelConfig, DataIngestionConfig, PrepareCallbackConfig
-
+from cnnClassifier.entity import PrepareBaseModelConfig, DataIngestionConfig, PrepareCallbackConfig, TrainingConfig
 
 
 class ConfigurationManager:
@@ -74,3 +73,20 @@ class ConfigurationManager:
         )
         return prepare_callback_config
     
+
+    def get_training_configuration(self) -> TrainingConfig:
+        training = self.config_file.training
+        prepare_base_model = self.config_file.prepare_base_model
+        params = self.params
+        training_data  = os.path.join(self.config_file.data_ingestion.unzip_dir ,"PetImages" )
+        training_config = TrainingConfig(
+            root_dir = Path(training.root_dir),
+            trained_model_path = Path(training.trained_model_path),
+            update_base_model = Path(prepare_base_model.update_base_model_path),
+            training_data = Path(training_data),
+            params_batch_size = int(params.BATCH_SIZE),
+            params_epoch = int(params.EPOCHS),
+            params_is_augmented = bool(params.AUGMENTATION),
+            params_image_size = list(params.IMAGE_SIZE)
+        )
+        return training_config
